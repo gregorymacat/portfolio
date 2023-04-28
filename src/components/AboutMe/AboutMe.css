@@ -1,0 +1,26 @@
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 93vh;
+  margin: 0 200px 0 200px;
+}
+.about-me-container .info-container {
+  white-space: pre-line;
+}
+/* .profile-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 420px;
+  background-color: #00B295;
+  border-radius: 50%;
+  outline: black solid 2px;
+} */
+.profile-photo-container #profile-photo {
+  border-radius: 50%;
+  width: 300px;
+  height: 400px;
+  outline: black solid 2px;
+}

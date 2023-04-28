@@ -1,0 +1,18 @@
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 780px;
+  height: 260px;
+}
+.info-container h1 {
+  margin: 10px 0px 20px 0px;
+  font-size: 32px;
+  width: 50%;
+  height: 30%;
+}
+.info-container span {
+  font-size: 24px;
+  width: 90%;
+  height: 70%;
+}
