@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 4vh;
+  padding: 14px 30px 14px 30px;
+  background-color: #383F51;
+  color: #FFFFFF;
+}
+.navbar h1 {
+  font-size: 40px;
+}
+.navbar-links b {
+  font-size: 24px;
+  padding-left: 20px;
+}
