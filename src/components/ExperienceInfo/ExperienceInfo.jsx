@@ -1,5 +1,6 @@
 import React from 'react';
 import InfoContainer from '../InfoContainer/InfoContainer.jsx';
+import './ExperienceInfo.css';
 
 const experiences = [
   {

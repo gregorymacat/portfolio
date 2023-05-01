@@ -2,7 +2,7 @@ import React, {useState, setState} from 'react';
 import Navbar from './Navbar/Navbar.jsx';
 import AboutMe from './AboutMe/AboutMe.jsx';
 import ExperienceInfo from './ExperienceInfo/ExperienceInfo.jsx';
-import ProjectInfo from './ProjectInfo/ProjectInfo.jsx';
+import Projects from './Projects/Projects.jsx';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -16,7 +16,7 @@ function App() {
       <Navbar changePage={changePage}/>
       {
         currentPage === 'Experience' ? <ExperienceInfo/>
-        : currentPage === 'Projects' ? <ProjectInfo/>
+        : currentPage === 'Projects' ? <Projects/>
         : <AboutMe/>
       }
     </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 
-function ProjectInfo() {
+function ProjectInfo({title, description}) {
   return (
-    <div>
-      <p>Project info will go here</p>
+    <div className="project-tile">
+      <b>{title}</b>
+      <p>{description}</p>
     </div>
   )
 }
