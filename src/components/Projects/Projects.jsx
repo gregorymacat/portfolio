@@ -23,9 +23,9 @@ const projectData = [
 function Projects() {
   return (
     <div className="projects-container">
-      <div className="projects-background">
+      <div className="project-info-container">
         <h1>Projects</h1>
-        <div className="project-info-container">
+        <div className="project-tiles-container">
           {
             projectData.map(project => (
               <ProjectInfo title={project.name} description={project.description}/>

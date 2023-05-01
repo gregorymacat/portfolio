@@ -4,19 +4,19 @@
   justify-content: center;
   height: 93vh;
 }
-.projects-background {
+.project-info-container {
   display: flex;
   width: 938px;
   height: 317px;
   background-color: #7796CB;
   flex-direction: column;
 }
-.projects-background h1 {
+.project-info-container h1 {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 75px;
 }
-.project-info-container {
+.project-tiles-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
