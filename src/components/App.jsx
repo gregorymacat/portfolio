@@ -5,7 +5,7 @@ import ExperienceInfo from './ExperienceInfo/ExperienceInfo.jsx';
 import Projects from './Projects/Projects.jsx';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('AboutMe');
+  const [currentPage, setCurrentPage] = useState('About Me');
 
   const changePage = (newPage) => {
     setCurrentPage(newPage);
