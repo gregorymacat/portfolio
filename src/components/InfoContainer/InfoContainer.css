@@ -11,6 +11,16 @@
   width: 50%;
   height: 30%;
 }
+.extra-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.extra-information h2 {
+  margin-bottom: 10px;
+  margin-right: 11%;
+  font-size: 24px;
+}
 .info-container span {
   font-size: 24px;
   width: 90%;

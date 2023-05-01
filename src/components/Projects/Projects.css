@@ -7,23 +7,18 @@
 .project-info-container {
   display: flex;
   width: 938px;
-  height: 317px;
+  height: 350px;
   background-color: #7796CB;
   flex-direction: column;
 }
 .project-info-container h1 {
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 75px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 32px;
 }
 .project-tiles-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-.project-tile {
-  width: 142px;
-  height: 142px;
-  /* border-radius: 50%; */
-  background-color: #00B295;
 }

@@ -1,0 +1,17 @@
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 184px;
+  height: 184px;
+  padding: 18px;
+  border-radius: 50%;
+  background-color: #00B295;
+  overflow: hidden;
+}
+.project-tile b {
+  margin: 0 auto;
+}
+.project-tile p {
+  margin: 0 auto;
+}

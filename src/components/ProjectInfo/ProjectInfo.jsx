@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProjectInfo.css';
 
 function ProjectInfo({title, description}) {
   return (
