@@ -5,21 +5,21 @@ import ExperienceInfo from './ExperienceInfo/ExperienceInfo.jsx';
 import Projects from './Projects/Projects.jsx';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('About Me');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   const changePage = (newPage) => {
     setCurrentPage(newPage);
   }
 
   return (
-    <div>
+    <React.Fragment>
       <Navbar changePage={changePage}/>
       {
         currentPage === 'Experience' ? <ExperienceInfo/>
         : currentPage === 'Projects' ? <Projects/>
         : <AboutMe/>
       }
-    </div>
+    </React.Fragment>
   )
 }
 

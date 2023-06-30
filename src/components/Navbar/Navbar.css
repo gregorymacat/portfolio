@@ -3,24 +3,45 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 4vh;
-  padding: 14px 30px 14px 30px;
-  background-color: #383F51;
-  color: #FFFFFF;
+  height: 7%;
+  margin: 1.5%;
+  /* padding: 14px 30px 14px 30px; */
+  background: #E6F2FA;
+  color: #101111;
 }
 .navbar h1 {
+  position: absolute;
+  left: 2%;
+  color: #5481C4;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   font-size: 40px;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.navbar-links {
+  position: absolute;
+  right: 2%;
+  width: 25%;
 }
 .navbar-links b {
-  font-size: 24px;
   padding-left: 20px;
+  color: #101111;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .navbar-links b:not(.selected):hover {
-  color: #cacaca;
+  color: #353636;
 }
 .navbar-links b:active {
-  color: #00e2bc;
+  color: #5481C4;
 }
 .navbar-links .selected {
-  color: #00e2bc;
+  color: #5481C4;
 }

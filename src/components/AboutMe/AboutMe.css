@@ -1,15 +1,42 @@
 .about-me-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 86.9%;
+}
+.about-me-background {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 93vh;
+  height: 80%;
+  margin-top: 2%;
 }
-.about-me-container .info-container {
+/* .about-me-container .info-container {
   white-space: pre-line;
   margin: 70px;
+} */
+.about-me-container .info-container h1 {
+  color: #5481C4;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  font-size: 60px;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.profile-photo-container {
-  margin: 70px;
+.about-me-container .info-container span {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-shrink: 0; */
+  overflow: hidden;
+  color: #101111;
+  text-overflow: ellipsis;
+  white-space: initial;
+  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 /* .profile-photo-container {
   display: flex;
@@ -21,8 +48,49 @@
   border-radius: 50%;
   outline: black solid 2px;
 } */
-.profile-photo-container #profile-photo {
+.profile-photo-downloads-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 2%;
+}
+.profile-photo-downloads-container #profile-photo {
   width: 300px;
   height: 400px;
   outline: black solid 2px;
+  border: 5px solid #101111;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.profile-photo-downloads-container button {
+  height: 12%;
+  border-radius: 400px;
+  border: 5px solid #101111;
+  background: #5481C4;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #E6F2FA;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.socials-container {
+  display: flex;
+  margin-left: 6%;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.socials-container img {
+  width: 10%;
+  margin: 0.5%;
+}
+.socials-container #linked-in-icon {
+  height: 50%;
+}
+.socials-container #github-icon {
+  height: 68%;
 }
