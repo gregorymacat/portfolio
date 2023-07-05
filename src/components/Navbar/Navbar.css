@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 7%;
-  margin: 1.5%;
+  margin: 0.5% 1.5% 1.5% 1.5%;
   /* padding: 14px 30px 14px 30px; */
   background: #E6F2FA;
   color: #101111;
@@ -23,7 +23,7 @@
 }
 .navbar-links {
   position: absolute;
-  right: 2%;
+  right: 0%;
   width: 25%;
 }
 .navbar-links b {

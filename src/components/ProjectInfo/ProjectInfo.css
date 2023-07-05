@@ -1,17 +1,54 @@
 .project-tile {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 184px;
-  height: 184px;
-  padding: 18px;
-  border-radius: 50%;
-  background-color: #00e2bc;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 40%;
+  padding: 6px;
+  /* border-radius: 50%; */
+  /* background-color: #00e2bc; */
   overflow: hidden;
 }
-.project-tile b {
-  margin: 0 auto;
+.project-image {
+  width: 25%;
 }
-.project-tile p {
-  margin: 0 auto;
+.project-information {
+  width: 75%;
+  margin: 0.5% 0 0.5% 2%;
+}
+.project-information h3 {
+  color: #5481C4;
+  font-size: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1%;
+}
+.project-information p {
+  overflow: hidden;
+  color: #101111;
+  text-overflow: ellipsis;
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1%;
+}
+.project-information button {
+  height: 25%;
+  width: 22%;
+  border-radius: 400px;
+  border: 5px solid #101111;
+  background: #5481C4;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #E6F2FA;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1%;
 }

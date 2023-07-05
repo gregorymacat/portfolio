@@ -1,8 +1,9 @@
+/* TODO Change the sizes for this page. Seems too big and in your face, need to shrink a bit*/
 .about-me-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 86.9%;
+  height: 88.9%;
 }
 .about-me-background {
   display: flex;

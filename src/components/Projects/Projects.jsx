@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectInfo from '../ProjectInfo/ProjectInfo.jsx';
 import './Projects.css';
+
+
 /*
   Starter project ideas:
   1) Weather App (https://shorturl.at/sCUWZ     https://mdbcdn.b-cdn.net/docs/standard/extended/weather/assets/featured.png)
@@ -13,36 +15,35 @@ import './Projects.css';
   3) Make website mobile friendly
   4) Content management system
 */
+
 const projectData = [
   {
-    name: 'Some name',
-    description: 'Some small description goes here. Very brief. Not many words.',
+    name: 'Guitar Note Quiz',
+    description: 'A quiz game that tests the user’s ability to identify notes on a guitar’s fret board.\
+    I used [language, tools, and programs] to complete this project [Fill in a bit more info about the stack and process.]',
+    imageLink: './assets/guitar_quiz_image.png',
     link: 'https://www.google.com/',
   },
   {
-    name: 'Some name',
-    description: 'Some small description goes here. Very brief. Not many words.',
-    link: 'https://www.google.com/',
-  },
-  {
-    name: 'Some name',
-    description: 'Some small description goes here. Very brief. Not many words.',
+    name: 'Weather App',
+    description: 'A simple application designed to consolidate weather data for numerous locations on a single page.\
+    I used [language, tools, and programs] to complete this project. [Fill in a bit more info about the stack and process.]',
+    imageLink: './assets/weather_app_image.png',
     link: 'https://www.google.com/',
   },
 ];
 
+//TODO Need to change this to only have two projects rendering
+
 function Projects() {
   return (
     <div className="projects-container">
-      <div className="project-info-container">
-        <h1>Projects</h1>
-        <div className="project-tiles-container">
-          {
-            projectData.map(project => (
-              <ProjectInfo title={project.name} description={project.description}/>
-            ))
-          }
-        </div>
+      <div className="project-tile-container">
+        {
+          projectData.map(project => (
+            <ProjectInfo imageLink={project.imageLink} title={project.name} description={project.description}/>
+          ))
+        }
       </div>
     </div>
   )
