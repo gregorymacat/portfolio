@@ -26,9 +26,7 @@
   line-height: normal;
 }
 .about-me-container .info-container span {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-shrink: 0; */
+  display: flex;
   overflow: hidden;
   color: #101111;
   text-overflow: ellipsis;
@@ -38,6 +36,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  align-items: center;
 }
 /* .profile-photo-container {
   display: flex;

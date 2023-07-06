@@ -21,8 +21,8 @@ function Navbar({changePage}) {
           onClick={onClick}>Home</b>
         <b className={pageSelection === 'Projects' ? "selected" : null}
           onClick={onClick}>Projects</b>
-        <b className={pageSelection === 'Experience' ? "selected" : null}
-          onClick={onClick}>Experience</b>
+        <b className={pageSelection === 'Contact' ? "selected" : null}
+          onClick={onClick}>Contact</b>
         
       </div>
     </div>

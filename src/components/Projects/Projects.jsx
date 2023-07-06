@@ -22,14 +22,14 @@ const projectData = [
     description: 'A quiz game that tests the user’s ability to identify notes on a guitar’s fret board.\
     I used [language, tools, and programs] to complete this project [Fill in a bit more info about the stack and process.]',
     imageLink: './assets/guitar_quiz_image.png',
-    link: 'https://www.google.com/',
+    url: 'https://www.google.com/',
   },
   {
     name: 'Weather App',
     description: 'A simple application designed to consolidate weather data for numerous locations on a single page.\
     I used [language, tools, and programs] to complete this project. [Fill in a bit more info about the stack and process.]',
     imageLink: './assets/weather_app_image.png',
-    link: 'https://www.google.com/',
+    url: 'https://www.google.com/',
   },
 ];
 
@@ -41,7 +41,7 @@ function Projects() {
       <div className="project-tile-container">
         {
           projectData.map(project => (
-            <ProjectInfo imageLink={project.imageLink} title={project.name} description={project.description}/>
+            <ProjectInfo imageLink={project.imageLink} title={project.name} description={project.description} url={project.url}/>
           ))
         }
       </div>

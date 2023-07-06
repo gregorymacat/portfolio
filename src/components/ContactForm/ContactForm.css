@@ -1,0 +1,67 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88.9%;
+  flex-direction: column;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 50%;
+  justify-content: space-around;
+}
+.contact-container h1{
+  overflow: hidden;
+  color: #5481C4;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 75px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contact-form input {
+  border: 2px solid #101111;
+  background: #FFF;
+}
+.name-inputs {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  justify-content: space-between;
+}
+.name-inputs input {
+  width: 36%;
+  height: 44%;
+  padding: 2%;
+}
+.contact-form #email-input {
+  width: 95.6%;
+  height: 5%;
+  padding: 2%;
+}
+.contact-form #inquiry-input {
+  width: 95.6%;
+  height: 38%;
+  padding: 2%;
+}
+.contact-form button {
+  margin: 0 auto;
+  height: 10%;
+  width: 25%;
+  border-radius: 400px;
+  border: 5px solid #101111;
+  background: #5481C4;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #E6F2FA;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

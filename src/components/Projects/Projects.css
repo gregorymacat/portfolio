@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  height: 88.9vh;
+  height: 88.9%;
   width: 100vw;
 }
 .project-info-container {
@@ -24,4 +24,23 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.project-information a {
+  display: flex;
+  text-decoration: none;
+  height: 16%;
+  width: 15%;
+  border-radius: 400px;
+  border: 5px solid #101111;
+  background: #5481C4;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #E6F2FA;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
 }
