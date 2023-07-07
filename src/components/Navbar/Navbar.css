@@ -15,7 +15,7 @@
   color: #5481C4;
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-  font-size: 40px;
+  font-size: 2vw;
   font-family: 'Fjalla One';
   font-style: normal;
   font-weight: 400;
@@ -30,7 +30,7 @@
   padding-left: 20px;
   color: #101111;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.6vw;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
