@@ -42,7 +42,7 @@ function ContactForm() {
           <input id="last-name-input" placeholder="Last Name" onChange={handleChange}></input>
         </div>
         <input id="email-input" placeholder="Email" onChange={handleChange}></input>
-        <input id="inquiry-input" type="text-area" placeholder="Type Your Message Here" onChange={handleChange}></input>
+        <textarea id="inquiry-input" placeholder="Type Your Message Here" onChange={handleChange}></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>

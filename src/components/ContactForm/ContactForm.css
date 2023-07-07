@@ -24,9 +24,10 @@
   font-weight: 700;
   line-height: normal;
 }
-.contact-form input {
+.contact-form input, .contact-form textarea {
   border: 2px solid #101111;
   background: #FFF;
+  font-family: "Inter", sans-serif;
 }
 .name-inputs {
   display: flex;
