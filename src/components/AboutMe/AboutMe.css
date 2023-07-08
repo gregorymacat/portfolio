@@ -70,7 +70,9 @@
   /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
-.profile-photo-downloads-container button {
+.profile-photo-downloads-container a {
+  display: flex;
+  text-decoration: none;
   height: 12%;
   border-radius: 400px;
   border: 5px solid #101111;
@@ -84,6 +86,8 @@
   font-weight: 400;
   line-height: normal;
   width: 88%;
+  align-items: center;
+  justify-content: center;
   /* min-width: 276px; */
 }
 .socials-container {

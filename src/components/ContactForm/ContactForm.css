@@ -12,13 +12,13 @@
   width: 50%;
   justify-content: space-around;
 }
-.contact-container h1{
+.contact-container h1 {
   overflow: hidden;
   color: #5481C4;
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 75px;
+  font-size: 5vw;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -60,7 +60,7 @@
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
   color: #E6F2FA;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5vw;
   font-family: 'Fjalla One', sans-serif;
   font-style: normal;
   font-weight: 400;
