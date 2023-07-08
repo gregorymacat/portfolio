@@ -3,23 +3,24 @@ import Navbar from './Navbar/Navbar.jsx';
 import AboutMe from './AboutMe/AboutMe.jsx';
 import ExperienceInfo from './ExperienceInfo/ExperienceInfo.jsx';
 import Projects from './Projects/Projects.jsx';
+import ContactForm from './ContactForm/ContactForm.jsx';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('About Me');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   const changePage = (newPage) => {
     setCurrentPage(newPage);
   }
 
   return (
-    <div>
+    <React.Fragment>
       <Navbar changePage={changePage}/>
       {
-        currentPage === 'Experience' ? <ExperienceInfo/>
+        currentPage === 'Contact' ? <ContactForm/>
         : currentPage === 'Projects' ? <Projects/>
         : <AboutMe/>
       }
-    </div>
+    </React.Fragment>
   )
 }
 
