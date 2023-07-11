@@ -24,32 +24,52 @@
   font-weight: 700;
   line-height: normal;
 }
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form .form-name-inputs-container input,
+.contact-form textarea {
   border: 2px solid #101111;
   background: #FFF;
   font-family: "Inter", sans-serif;
+  padding: 2%;
+  height: 100%;
 }
-.name-inputs {
+.contact-form input::placeholder,
+.contact-form .form-name-inputs-container input::placeholder,
+.contact-form textarea {
+  color: grey;
+}
+.form-name-inputs-container {
   display: flex;
   height: 10%;
   width: 100%;
   justify-content: space-between;
 }
-.name-inputs input {
-  width: 36%;
-  height: 44%;
-  padding: 2%;
+.form-first-name-container, .form-last-name-container {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  height: 100%;
 }
-.contact-form #email-input {
-  width: 95.6%;
-  height: 5%;
-  padding: 2%;
+.form-email-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10%;
 }
-.contact-form #inquiry-input {
-  width: 95.6%;
-  height: 38%;
-  padding: 2%;
+.form-inquiry-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
 }
+
+#first-name-input-error::placeholder,
+#last-name-input-error::placeholder,
+#email-input-error::placeholder,
+#inquiry-input-error::placeholder {
+  color: red;
+}
+
 .contact-form button {
   margin: 0 auto;
   height: 10%;
