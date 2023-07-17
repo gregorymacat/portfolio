@@ -41,26 +41,50 @@ function ContactForm() {
     }
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
+  const validateForm = () => {
+    let isFormValid = true;
     if (!firstName.length) {
       setFirstNameError('Please enter your first name ⚠️');
-    } 
+      isFormValid = false;
+    } else if (firstName.length) {
+      setFirstNameError('');
+    }
+
     if (!lastName.length) { 
       setLastNameError('Please enter your last name ⚠️');
+      isFormValid = false;
+    } else if (lastName.length) {
+      setLastNameError('');
     }
 
     if (!inquiry.length) {
       setInquiryError('Please enter the reason you would like to contact me ⚠️');
+      isFormValid = false;
+    } else if (inquiry.length) {
+      setInquiryError('');
     } 
 
-    if (!checkEmailValid(email)) {
+    const isEmailValid = checkEmailValid(email);
+    if (!isEmailValid) {
       setEmailError('Please enter a valid email ⚠️');
-      setEmail('');
-    } 
-    
+      isFormValid = false;
+    } else if (isEmailValid) {
+      setEmailError('');
+    }
 
+    return isFormValid;
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const passedFormValidation = validateForm();
+    if (passedFormValidation) {
+      //submit email
+      console.log('Email would be sent');
+      
+    }
+    //else do nothing
   }
   
   //TODO Need to make sure that the validation messages don't mess up the css
