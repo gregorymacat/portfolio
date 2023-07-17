@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactForm.css';
 
 function checkEmailValid (email) {
@@ -80,9 +81,30 @@ function ContactForm() {
 
     const passedFormValidation = validateForm();
     if (passedFormValidation) {
+      const formData = new FormData();
+      formData.append('first_name', firstName);
+      formData.append('last_name', lastName);
+      formData.append('email', email);
+      formData.append('message', inquiry);
+
       //submit email
-      console.log('Email would be sent');
-      
+      emailjs.send(
+        'service_8lcu1lj',
+        'template_670fj1i', 
+        {
+          'first_name': firstName,
+          'last_name': lastName,
+          'email': email,
+          'message': inquiry,
+        },
+        'SxcZS4Ol36eVHIlQ3'
+      )
+        .then((result) => {
+            console.log('email sent: ', result.text);
+        })
+        .catch((error) => {
+            console.log('email failed: ', error.text);
+        });
     }
     //else do nothing
   }
