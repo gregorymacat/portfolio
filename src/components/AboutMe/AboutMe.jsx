@@ -33,8 +33,12 @@ function AboutMe() {
         {/* <InfoContainer title={title} text={text}/> */}
       </div>
       <div className="socials-container">
-        <img id="linkedin-icon" src="./assets/LI_words_Logo.png" alt="Linked In Link"></img>
-        <img id="github-icon" src="./assets/GitHub_words_Logo.png" alt="Github Link"></img>
+        <a className="socials-link-container" href="https://linkedin.com/gregorymacat" target="_blank">
+          <img id="linkedin-icon" src="./assets/LI_words_Logo.png" alt="Linked In Link"></img>
+        </a>
+        <a className="socials-link-container" href="https://github.com/gregorymacat" target="_blank">
+          <img id="github-icon" src="./assets/GitHub_words_Logo.png" alt="Github Link"></img>
+        </a>
       </div>
     </div>
   )

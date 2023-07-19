@@ -81,23 +81,17 @@ function ContactForm() {
 
     const passedFormValidation = validateForm();
     if (passedFormValidation) {
-      const formData = new FormData();
-      formData.append('first_name', firstName);
-      formData.append('last_name', lastName);
-      formData.append('email', email);
-      formData.append('message', inquiry);
-
       //submit email
       emailjs.send(
-        'service_8lcu1lj',
-        'template_670fj1i', 
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID, 
         {
           'first_name': firstName,
           'last_name': lastName,
           'email': email,
           'message': inquiry,
         },
-        'SxcZS4Ol36eVHIlQ3'
+        process.env.PUBLIC_KEY,
       )
         .then((result) => {
             console.log('email sent: ', result.text);

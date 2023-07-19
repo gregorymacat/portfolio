@@ -1,8 +1,13 @@
+html, body {
+  height: 100%;
+}
+body {
+  background: #E6F2FA;
+}
 #app {
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: #E6F2FA;
 }

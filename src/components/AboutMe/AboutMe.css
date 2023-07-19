@@ -98,14 +98,20 @@
   align-content: center;
   align-items: center;
   justify-content: flex-end;
+  height: 10%;
 }
-.socials-container img {
+.socials-link-container {
+  height: 100%;
   width: 10%;
-  margin: 0.5%;
+  margin: 0.65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.socials-container #linked-in-icon {
+.socials-link-container #linkedin-icon {
   height: 50%;
 }
-.socials-container #github-icon {
+.socials-link-container #github-icon {
   height: 68%;
 }
